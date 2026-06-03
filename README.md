@@ -13,7 +13,7 @@ Ziel dieses Projekts ist es, diese möglichen Verzerrungen anhand von Berufsdate
 
 Die zentrale Forschungsfrage lautet:
 
-**Inwiefern unterscheidet sich die Darstellung von Berufen in Wikidata von der tatsächlichen Geschlechterverteilung in der realen Arbeitswelt, und welche geschlechtsspezifischen Verzerrungen lassen sich daraus ableiten?**
+**Inwiefern führt die Stuktur von Wikidata zu einer Überrepräsentation von Status Berufen und Unterrepräsentation von alltäglichen Berufen und welche geschlechtsspezifischen Verzerrungen ergeben sich daraus?**
 
 Daraus ergeben sich folgende Teilfragen:
 
@@ -114,6 +114,13 @@ Darstellung durch:
 - Balkendiagramme
 
 
+### 4.5 Untersuchung der erfassten Personen
+
+Um besser zu verstehen, welche Personen in Wikidata erfasst werden, wurden für ausgewählte Berufsgruppen beispielhafte Personen einschließlich Geschlecht und Geburtsjahr betrachtet.
+
+Dadurch sollte untersucht werden, ob Wikidata eher historisch bedeutsame und gesellschaftlich sichtbare Personen enthält als eine repräsentative Auswahl aller Berufstätigen.
+
+
 ## 5. Ergebnisse
 
 
@@ -183,6 +190,31 @@ Ein weiteres wichtiges Ergebnis:
   → deutlich unterrepräsentiert
 
 
+### 5.6 Wer wird in Wikidata erfasst?
+
+Die Betrachtung einzelner Personen zeigt, dass Wikidata überwiegend historisch bedeutsame und gesellschaftlich sichtbare Persönlichkeiten enthält.
+
+Viele der erfassten Personen stammen aus dem 19. oder frühen 20. Jahrhundert und sind überwiegend männlich.
+
+Dies gilt sowohl für Statusberufe wie Politiker und CEOs als auch für Berufe wie Lehrer oder Ärzte.
+
+Die Ergebnisse unterstützen die Annahme, dass Wikidata nicht die Gesamtheit aller Berufstätigen abbildet, sondern vor allem Personen mit öffentlicher Sichtbarkeit und historischer Relevanz.
+
+
+### 5.7 Statistische Überprüfung
+
+Zur statistischen Überprüfung der Unterschiede zwischen Wikidata und den realen Arbeitsmarktdaten wurde ein gepaarter T-Test durchgeführt.
+
+Ergebnis:
+
+- t-Wert = -3,88
+- p-Wert = 0,006
+
+Da der p-Wert deutlich unter dem Signifikanzniveau von 0,05 liegt, sind die Unterschiede zwischen Wikidata und den realen Arbeitsmarktdaten statistisch signifikant.
+
+Die beobachteten Abweichungen können daher nicht allein durch Zufall erklärt werden.
+
+
 ## 6. Interpretation
 
 Die Ergebnisse lassen sich durch mehrere Faktoren erklären:
@@ -194,6 +226,10 @@ Wikidata erfasst vor allem:
 - öffentlich relevante Figuren
 
 → führt zur Überrepräsentation bestimmter Berufsgruppen
+
+Viele der erfassten Personen stammen zudem aus historischen Zeiträumen, in denen Frauen in Politik, Wissenschaft oder Führungspositionen deutlich seltener vertreten waren.
+
+Dadurch wird die männliche Dominanz in zahlreichen Berufsgruppen zusätzlich verstärkt.
 
 
 ### 6.2 Geschlechterbias
@@ -248,7 +284,8 @@ Dies deutet auf einen strukturellen Gender Bias hin, der sowohl aus gesellschaft
 
 - Python
 - pandas
-- seaborn
+- numpy
+- scipy
 - matplotlib
 - SPARQL
 - Wikidata Query Service
